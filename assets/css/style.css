@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat-bold {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.montserrat-light {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    /* Variáveis CSS padrão  */
+    --bg-body-light: #F8FBFE;
+    --bg-card-light: #212121;
+    --text-light: #212121;
+
+    --text-dark: #F8FBFE;
+    --bg-body-dark: #212121;
+    --bg-card-dark: #F8FBFE;
+
+    --bg-card-content-light: #F8FBFE;
+    --bg-card-content-dark: #2f2f2f;
+    --gradient: background-image: linear-gradient(to right, #f8fbfe, #dedfe2, #c4c4c6, #aaaaab, #919191, #7f7f7f, #6c6d6c, #5b5b5b, #4c4c4c, #3d3d3d, #2f2f2f, #212121);
+
+    a:link {
+        text-decoration: none;
+    }
+
+    /* Adicione outras variáveis padrão aqui */
+}
+
+@media (prefers-color-scheme: light) {
+
+    /* Aplicação geral de estilos light mode*/
+    body {
+        background-color: var(--bg-body-light);
+        color: var(--text-light);
+    }
+
+    /* From Uiverse.io by EmmaxPlay */
+    .card-css {
+        background-color: var(--bg-card-light);
+        border-radius: 10px;
+
+    }
+
+    .conteudo-card {
+        background-color: var(--bg-card-content-light);
+    }
+
+    .Documents-btn:hover {
+        border: 1px solid var(--bg-card-content-light);
+    }
+
+    .skill-title {
+        color: var(--text-light);
+    }
+
+    .profile-title {
+        color: var(--text-light);
+    }
+
+    .profile-ocupation {
+        color: var(--text-light);
+    }
+
+    .skills {
+        background-color: var(--bg-card-content-light);
+    }
+
+    /* From Uiverse.io by vinodjangid07 */
+    .Documents-btn {
+        background-color: var(--bg-card-light);
+        border-color: 2px solid var(--bg-card-content-light);
+        color: var(--text-dark);        box-shadow: 0px 4px 4px var(--bg-card-content-light);
+        box-shadow: 0px 4px 4px var(--bg-card-content-dark);
+    }
+
+    .Documents-btn:hover {
+        background-color: var(--bg-card-content-light);
+        color: var(--text-light);
+        border-color: 2px solid var(--bg-card-content-light);
+        box-shadow: 0px 4px 4px var(--bg-card-content-dark);
+    }
+
+    /* From Uiverse.io by reshades */
+    .button {
+        color: var(--text-dark);
+        /* Fundo transparente inicialmente */
+        border: var(--bg-body-light) 2px solid;
+        box-shadow: 0px 4px 4px var(--bg-card-content-dark);
+        background-color: var(--bg-card-content-light);
+        color: var(--text-dark);
+    }
+
+    .button:hover {
+        box-shadow: 0px 4px 4px var(--bg-card-content-light);
+        border: var(--bg-body-dark) 2px solid;
+        background-color: var(--bg-card-content-light);
+        color: var(--text-lights);
+    }
+    .social-btn{
+        background-color: var(--bg-card-content-light);
+    }
+    .social-btn:hover {
+        background-color: var(--bg-card-content-light);
+        color: var(--text-light);
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    /* Aplicação geral de estilos light mode*/
+    body {
+        background-color: var(--bg-body-dark);
+        color: var(--text-dark);
+    }
+
+    /* From Uiverse.io by EmmaxPlay */
+    .card-css {
+        background-color: var(--bg-card-dark);
+        border-radius: 10px;
+    }
+
+    .conteudo-card {
+        background-color: var(--bg-card-content-dark);
+    }
+
+    .Documents-btn:hover {
+        border: 1px solid var(--bg-card-dark);
+    }
+
+    .skill-title {
+        color: var(--text-dark);
+    }
+
+    .profile-title {
+        color: var(--text-dark);
+    }
+
+    .profile-ocupation {
+        color: var(--text-dark);
+    }
+
+    .skills {
+        background-color: var(--bg-card-content-dark);
+    }
+
+    .tools {
+        background-color: var(--bg-card-dark);
+        border-radius: 10px;
+    }
+
+    /* From Uiverse.io by vinodjangid07 */
+    .Documents-btn {
+        color: var(--text-light);
+        box-shadow: 0px 4px 4px var(--bg-card-content-dark);
+        background-color: var(--bg-card-content-light);
+    }
+
+    .Documents-btn:hover {
+        background-color: var(--bg-card-content-dark);
+        color: var(--bg-card-content-dark);
+        box-shadow: 0px 4px 4px var(--bg-card-content-dark);
+    }
+
+    .Documents-btn:hover {
+        color: var(--text-dark);
+        border-color: var(--bg-card-content-dark);
+        box-shadow: 0px 4px 4px var(--bg-card-content-dark);
+    }
+
+    /* From Uiverse.io by reshades */
+    .button {
+        color: var(--text-light);   
+        /* Fundo transparente inicialmente */
+        border: var(--bg-body-dark) 2px solid;
+        box-shadow: 0px 4px 4px var(--bg-card-content-dark);
+    }
+
+    .button:hover {
+        box-shadow: 0px 4px 4px var(--bg-card-content-dark);
+        color: var(--text-dark);
+        background-color: var(--bg-card-content-dark);
+    }
+    .social-btn{
+        background-color: var(--bg-card-content-dark);
+    }
+    .social-btn:hover {
+        background-color: var(--bg-card-content-dark);
+        color: var(--text-dark);
+    }
+}
+
+
+.conteudo {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* From Uiverse.io by EmmaxPlay */
+.card-css {
+    width: 360px;
+
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+.card__content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.conteudo-card {
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conteudo-card:hover {
+    transform: translateY(-5px);
+    /* Desloca para cima */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra para efeito */
+}
+
+.profile-pic img {
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.profile-info {
+    height: 100%;
+}
+
+.profile-title {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.profile-ocupation {
+    text-align: justify;
+}
+
+.profile-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    width: auto;
+    padding: 20px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.skills:hover {
+    transform: translateY(-5px);
+    /* Desloca para cima */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra para efeito */
+}
+
+.skill-list {
+    margin-top: 10px;
+}
+
+.scroll-container {
+    width: 100%;
+    /* Largura do container */
+    overflow: hidden;
+    /* Oculta o conteúdo que excede */
+
+    /* Espaçamento superior e inferior */
+    position: relative;
+}
+
+.scroll-content {
+    display: flex;
+    /* Elementos em linha */
+    gap: 10px;
+    /* Espaço entre os itens */
+    animation: scroll 15s linear infinite;
+    /* Animação contínua */
+    will-change: transform;
+    /* Otimização de performance */
+}
+
+.scroll-item {
+    height: 60px;
+    /* Altura dos ícones */
+    width: auto;
+    /* Mantém a proporção */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(90%);
+        /* Começa fora da tela pela direita */
+    }
+
+    to {
+        transform: translateX(-300%);
+        /* Sai pela esquerda */
+    }
+}
+
+.scroll-container:hover .scroll-content {
+    animation-play-state: paused;
+    /* Pausa a animação ao passar o mouse */
+}
+
+/* From Uiverse.io by vinodjangid07 */
+.Documents-btn {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animação de flutuação */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Posição inicial */
+    }
+
+    50% {
+        transform: translateY(-5px);
+        /* Sobe 10px */
+    }
+}
+
+.folderContainer {
+    width: 70px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    /* Adiciona a animação de flutuação */
+    animation: float 2s ease-in-out infinite;
+}
+
+.fileBack {
+    z-index: 1;
+    width: 80%;
+    height: auto;
+}
+
+.filePage {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+    margin-bottom: 1px;
+}
+
+.fileFront {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.95;
+    transform-origin: bottom;
+    transition: all 0.3s ease-out;
+}
+
+
+.Documents-btn:hover .filePage {
+    transform: translateY(-5px);
+}
+
+.Documents-btn:active {
+    transform: scale(0.95);
+}
+
+.Documents-btn:hover .fileFront {
+    transform: rotateX(30deg);
+}
+
+.Documents-btn:hover {
+    transform: translateY(-5px);
+    /* Desloca para cima */
+}
+
+/* From Uiverse.io by reshades */
+.button {
+    background-color: transparent;
+    /* Fundo transparente inicialmente */
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    text-align: right;
+    transition: all 0.6s ease;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    /* Evita que o gradiente ultrapasse o botão */
+    background-size: 0% 100%;
+    /* Inicialmente invisível */
+    background-repeat: no-repeat;
+}
+
+.button:hover {
+    background-size: 100% 100%;
+    /* Preenche o botão no hover */
+    cursor: pointer;
+    border: none;
+    transform: translateY(-5px);
+    /* Desloca para cima */
+}
+
+.button svg {
+    width: 40px;
+    display: flex;
+    transition: all 0.6s ease;
+    position: relative;
+    margin-left: 20px;
+    /* Garante que o ícone permaneça visível */
+    z-index: 1;
+}
+
+.button:hover svg {
+    transform: translateX(35px);
+}
+
+.button span {
+    position: relative;
+    z-index: 1;
+    /* Garante que o texto também esteja acima do background */
+}
+
+/* From Uiverse.io by Pradeepsaranbishnoi */
+.social-links,
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    color: #011522;
+    border-radius: 10px;
+    margin: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.social-btn svg {
+    height: 24px;
+    width: 24px;
+}
+.social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 1s;
+    text-align: center;
+}
+.social-btn:hover {
+    width: 170px;
+    border-radius: 5px;
+}
+.social-btn:hover svg {
+    width: 20%;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.social-btn:hover span {
+    padding: 2px;
+    width: 80%;
+    margin-left: 5px;
+    text-align: left;
+    white-space: nowrap;
+    padding-right: 5px;
+}
+/* Alterar a cor de fundo do tooltip */
+.tooltip-inner {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    --bs-tooltip-bg: #011522;
+}
+
+/* Alterar a cor da seta */
+.tooltip-arrow::before {
+    --bs-tooltip-bg: #011522;
+}

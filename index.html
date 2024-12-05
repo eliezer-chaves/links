@@ -13,153 +13,261 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkTree</title>
-    <!-- Link para o Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Eliézer Chaves</title>
     <link rel="shortcut icon" href="lib/profilepic.png" type="image/x-icon">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Work+Sans:ital,wght@0,700;1,700&display=swap');
+    <link rel="shortcut icon" href="assets/img/profilepic.png" type="image/x-icon">
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
 
-        .font-style {
-            font-family: "Montserrat", serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 16px;
-        }
+    <link rel="stylesheet" href="assets/css/face.css">
+    <link rel="stylesheet" href="assets/css/pageLoad.css">
 
-        .content {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #233853;
-            background-image: linear-gradient(150deg, #f2ac33 10%, #152a46 90%);
-        }
-
-        .picture {
-            margin-top: 125px;
-        }
-
-        .imagem {
-            border-radius: 50%;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        }
-
-        .bio {
-            display: flex;
-            flex-direction: column;
-            gap: 42px;
-        }
-
-        .botoes {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .btn {
-            background-color: #FCB400;
-            border-color: none;
-            box-shadow: none;
-            width: 250px;
-            height: 50px;
-            color: #171717;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        }
-
-        .btn:hover {
-            background-color: transparent;
-            border: 1px solid #FCB400;
-            color: #FCB400;
-            cursor: pointer;
-        }
-
-        .btn svg {
-            margin-right: 10px;
-        }
-
-        .btn:hover svg path {
-            fill: #FCB400;
-        }
-    </style>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <div class="content">
-        <div class="picture">
-            <img src="lib/profilepic.png" width="160px" height="160px" alt="Imagem de Perfil" class="imagem">
-        </div>
-        <div class="bio mt-5">
-            <div class="botoes">
-                <a href="https://github.com/eliezer-chaves" target="_blank" rel="noopener noreferrer"><button
-                        class="btn">
-                        <svg width="30px" height="30px" viewBox="0 0 20 20" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            fill="#000000">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <title>github [#142]</title>
-                                <desc>Created with Sketch.</desc>
-                                <defs> </defs>
-                                <g id="Page-1" stroke-width="0.0002" fill="none" fill-rule="evenodd">
-                                    <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)"
-                                        fill="#000000">
-                                        <g id="icons" transform="translate(56.000000, 160.000000)">
-                                            <path
-                                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
-                                                id="github-[#142]"> </path>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                        <span class="font-style">GitHub</span></button></a>
-                <a href="lib/Currículo Eliézer Chaves.pdf" download="">
-                    <button class="btn" download="lib/Currículo Eliézer Chaves.pdf">
-                        <svg fill="#000000" width="35px" height="40px" viewBox="-1.9 -1.9 22.80 22.80"
-                            xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M16.417 9.579A7.917 7.917 0 1 1 8.5 1.662a7.917 7.917 0 0 1 7.917 7.917zm-4.233-1.805H9.259a.317.317 0 0 1-.317-.317v-2.9H5.16a.318.318 0 0 0-.317.317v9.368a.318.318 0 0 0 .317.316h6.707a.317.317 0 0 0 .317-.316zM6.599 6.212a.792.792 0 1 0 .791.792.792.792 0 0 0-.791-.792zm4.448 2.681H5.833v.792h5.214zm0 1.69H5.833v.792h5.214zm0 1.69H5.833v.792h5.214zM9.737 6.98h2.431l-2.43-2.416z">
-                                </path>
-                            </g>
-                        </svg>
-                        <span class="font-style">Currículo</span></button>
-                </a>
-                <a href="https://eliezer-chaves.github.io/curriculo-eliezer-chaves/" target="_blank">
-                    <button class="btn ">
-                        <svg width="30px" height="30px" viewBox="0 0 16.00 16.00" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
-                            stroke="#000000" stroke-width="0.00016">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
-                                stroke="#CCCCCC" stroke-width="0.256"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z"
-                                    fill="#000000"></path>
-                                <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z"
-                                    fill="#000000"></path>
-                                <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z"
-                                    fill="#000000"></path>
-                            </g>
-                        </svg>
-                        <span class="font-style">Portifólio</span></button></button></a>
+<body onload="pageLoader()"">
+    <div id="pageContent">
+        <div class="conteudo">
+            <div class="card-css">
+                <div class="tools">
+                    <div class="circle">
+                        <span class="red box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="yellow box"></span>
+                    </div>
+                    <div class="circle">
+                        <span class="green box"></span>
+                    </div>
+                </div>
+                <div class="card__content shadow-lg">
+                    <div class="conteudo-card">
+                        <div class="profile-pic ">
+                            <img src="assets/img/profile.jpeg" alt="" class="shadow-sm">
+                        </div>
+                        <div class="profile-info d-flex flex-column justify-content-center align-items-start">
+                            <div class="profile-title">
+                                <h5 class="montserrat-bold"><b>Eliézer Chaves</b></h5>
+                            </div>
+                            <div class="profile-ocupation">
+                                <h6 class="montserrat-light">Desenvolvedor</h6>
+                            </div>
+                        </div>
+                        <div class="profile-icon">
+                            <div class="face">
+                                <div class="eyes">
+                                    <div class="eye">
+                                        <div class="pupil"></div>
+                                    </div>
+                                    <div class="eye">
+                                        <div class="pupil"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="skills">
+                        <div class="skill-title">
+                            <h5 class="montserrat-bold"><b>Hard Skills</b></h1>
+                        </div>
+                        <div class="skill-list">
+                            <div class="scroll-container">
+                                <div class="scroll-content">
+                                    <img src="assets/img/Vector.svg" alt="" class="scroll-item" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Análise de Dados">
+
+                                    <img src="assets/img/skill-icons_arduino.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Arduino">
+                                    <img src="assets/img/flat-color-icons_electronics.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Eletroeletrônica">
+                                    <img src="assets/img/skill-icons_python-dark.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Python">
+                                    <img src="assets/img/skill-icons_mysql-dark.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL">
+                                    <img src="assets/img/skill-icons_php-dark.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
+                                    <img src="assets/img/skill-icons_github-dark.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
+                                    <img src="assets/img/skill-icons_figma-dark.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Figma">
+                                    <img src="assets/img/skill-icons_bootstrap.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap">
+                                    <img src="assets/img/skill-icons_javascript.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Javascript">
+                                    <img src="assets/img/skill-icons_css.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="CSS">
+                                    <img src="assets/img/skill-icons_html.svg" alt="" class="scroll-item"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="HTML">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="Documents-btn d-flex justify-content-around align-items-center">
+                        <div class="document-folder" style="width: 25%;"><span class="folderContainer ">
+                                <svg class="fileBack" width="146" height="113" viewBox="0 0 146 113" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 4C0 1.79086 1.79086 0 4 0H50.3802C51.8285 0 53.2056 0.627965 54.1553 1.72142L64.3303 13.4371C65.2799 14.5306 66.657 15.1585 68.1053 15.1585H141.509C143.718 15.1585 145.509 16.9494 145.509 19.1585V109C145.509 111.209 143.718 113 141.509 113H3.99999C1.79085 113 0 111.209 0 109V4Z"
+                                        fill="url(#paint0_linear_117_4)"></path>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_117_4" x1="0" y1="0" x2="72.93" y2="95.4804"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#F8FBFE"></stop>
+                                            <stop offset="1" stop-color="#212121"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                                <svg class="filePage" width="88" height="99" viewBox="0 0 88 99" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="88" height="99" fill="url(#paint0_linear_117_6)"></rect>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_117_6" x1="0" y1="0" x2="81" y2="160.5"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#F8FBFE"></stop>
+                                            <stop offset="1" stop-color="#686868"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                                <svg class="fileFront" width="160" height="79" viewBox="0 0 160 79" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.29306 12.2478C0.133905 9.38186 2.41499 6.97059 5.28537 6.97059H30.419H58.1902C59.5751 6.97059 60.9288 6.55982 62.0802 5.79025L68.977 1.18034C70.1283 0.410771 71.482 0 72.8669 0H77H155.462C157.87 0 159.733 2.1129 159.43 4.50232L150.443 75.5023C150.19 77.5013 148.489 79 146.474 79H7.78403C5.66106 79 3.9079 77.3415 3.79019 75.2218L0.29306 12.2478Z"
+                                        fill="url(#paint0_linear_117_5)"></path>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_117_5" x1="38.7619" y1="8.71323" x2="66.9106"
+                                            y2="82.8317" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#F8FBFE"></stop>
+                                            <stop offset="1" stop-color="#212121"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                        </div>
+                        <a href="assets/Currículo Eliézer Chaves.pdf" download="">
+                            <div class="cv-title" style="width: 50%;">
+                                <h5 class="montserrat-bold text-button" style="margin-top: 7px;">Currículo</h5>
+                            </div>
+                        </a>
+                        <div style="width: 25%;">
+                        </div>
+                    </button>
+                    <div style="margin-top: 10px;">
+                        <a href="public/portifolio.html" target="_blank">
+                            <button class="button d-flex align-items-center justify-content-between
+                            ">
+                                <div style="width: 5%;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                    </svg>
+
+                                </div>
+                                <div style="width: 50%;">
+                                    <h5 class="montserrat-bold" style="margin-top: 7px;">Portifólio</h5>
+
+                                </div>
+                                <div style="width: 25%;">
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/oeliezerchaves/" target="_blank" rel="noopener noreferrer">
+                            <div id="twitter" class="social-btn flex-center">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.2812 0H11.7188C5.24666 0 0 5.24666 0 11.7188V38.2812C0 44.7533 5.24666 50 11.7188 50H38.2812C44.7533 50 50 44.7533 50 38.2812V11.7188C50 5.24666 44.7533 0 38.2812 0Z"
+                                        fill="url(#paint0_radial_30_7)" />
+                                    <path
+                                        d="M38.2812 0H11.7188C5.24666 0 0 5.24666 0 11.7188V38.2812C0 44.7533 5.24666 50 11.7188 50H38.2812C44.7533 50 50 44.7533 50 38.2812V11.7188C50 5.24666 44.7533 0 38.2812 0Z"
+                                        fill="url(#paint1_radial_30_7)" />
+                                    <path
+                                        d="M25.0018 5.46875C19.6975 5.46875 19.0316 5.49199 16.9484 5.58672C14.8691 5.68203 13.4498 6.01113 12.208 6.49414C10.9232 6.99297 9.83359 7.66035 8.74805 8.74629C7.66152 9.83203 6.99414 10.9217 6.49375 12.2059C6.00938 13.448 5.67988 14.868 5.58633 16.9463C5.49316 19.0297 5.46875 19.6957 5.46875 25.0002C5.46875 30.3047 5.49219 30.9684 5.58672 33.0516C5.68242 35.1309 6.01152 36.5502 6.49414 37.792C6.99336 39.0768 7.66074 40.1664 8.74668 41.252C9.83203 42.3385 10.9217 43.0074 12.2055 43.5062C13.4482 43.9893 14.8678 44.3184 16.9467 44.4137C19.0301 44.5084 19.6953 44.5316 24.9994 44.5316C30.3043 44.5316 30.968 44.5084 33.0512 44.4137C35.1305 44.3184 36.5514 43.9893 37.7941 43.5062C39.0783 43.0074 40.1664 42.3385 41.2516 41.252C42.3381 40.1664 43.0053 39.0768 43.5059 37.7926C43.9859 36.5502 44.3156 35.1305 44.4133 33.052C44.5068 30.9687 44.5312 30.3047 44.5312 25.0002C44.5312 19.6957 44.5068 19.0301 44.4133 16.9467C44.3156 14.8674 43.9859 13.4482 43.5059 12.2064C43.0053 10.9217 42.3381 9.83203 41.2516 8.74629C40.1652 7.65996 39.0787 6.99258 37.793 6.49434C36.5479 6.01113 35.1277 5.68184 33.0484 5.58672C30.965 5.49199 30.3018 5.46875 24.9957 5.46875H25.0018ZM23.2496 8.98848C23.7697 8.9877 24.35 8.98848 25.0018 8.98848C30.2168 8.98848 30.8348 9.00723 32.8941 9.10078C34.7984 9.18789 35.832 9.50605 36.5205 9.77344C37.432 10.1273 38.0818 10.5506 38.765 11.2344C39.4486 11.918 39.8717 12.5689 40.2266 13.4805C40.4939 14.168 40.8125 15.2016 40.8992 17.1059C40.9928 19.1648 41.0131 19.7832 41.0131 24.9957C41.0131 30.2082 40.9928 30.8268 40.8992 32.8855C40.8121 34.7898 40.4939 35.8234 40.2266 36.5111C39.8727 37.4227 39.4486 38.0717 38.765 38.7549C38.0814 39.4385 37.4324 39.8615 36.5205 40.2156C35.8328 40.4842 34.7984 40.8016 32.8941 40.8887C30.8352 40.9822 30.2168 41.0025 25.0018 41.0025C19.7865 41.0025 19.1684 40.9822 17.1096 40.8887C15.2053 40.8008 14.1717 40.4826 13.4826 40.2152C12.5713 39.8611 11.9201 39.4381 11.2365 38.7545C10.5529 38.0709 10.1299 37.4215 9.775 36.5096C9.50762 35.8219 9.18906 34.7883 9.10234 32.884C9.00879 30.825 8.99004 30.2066 8.99004 24.9908C8.99004 19.775 9.00879 19.16 9.10234 17.101C9.18945 15.1967 9.50762 14.1631 9.775 13.4746C10.1291 12.5631 10.5529 11.9121 11.2367 11.2285C11.9205 10.5449 12.5713 10.1217 13.4828 9.76699C14.1713 9.49844 15.2053 9.18105 17.1096 9.09355C18.9113 9.01211 19.6096 8.98769 23.2496 8.98359V8.98848ZM35.4275 12.2314C34.1336 12.2314 33.0838 13.2803 33.0838 14.5744C33.0838 15.8684 34.1336 16.9182 35.4275 16.9182C36.7215 16.9182 37.7713 15.8684 37.7713 14.5744C37.7713 13.2805 36.7215 12.2307 35.4275 12.2307V12.2314ZM25.0018 14.9699C19.4627 14.9699 14.9717 19.4609 14.9717 25.0002C14.9717 30.5395 19.4627 35.0283 25.0018 35.0283C30.541 35.0283 35.0305 30.5395 35.0305 25.0002C35.0305 19.4611 30.5406 14.9699 25.0014 14.9699H25.0018ZM25.0018 18.4896C28.5973 18.4896 31.5123 21.4043 31.5123 25.0002C31.5123 28.5957 28.5973 31.5107 25.0018 31.5107C21.4063 31.5107 18.4914 28.5957 18.4914 25.0002C18.4914 21.4043 21.4061 18.4896 25.0018 18.4896Z"
+                                        fill="white" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_30_7" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(13.2812 53.851) rotate(-90) scale(49.5537 46.0889)">
+                                            <stop stop-color="#FFDD55" />
+                                            <stop offset="0.1" stop-color="#FFDD55" />
+                                            <stop offset="0.5" stop-color="#FF543E" />
+                                            <stop offset="1" stop-color="#C837AB" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_30_7" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(-8.3752 3.60176) rotate(78.681) scale(22.1508 91.3062)">
+                                            <stop stop-color="#3771C8" />
+                                            <stop offset="0.128" stop-color="#3771C8" />
+                                            <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                                <span>@oeliezerchaves</span>
+                            </div>
+                        </a>
+                        <a href="http://www.linkedin.com/in/eliezer-chaves" target="_blank" rel="noopener noreferrer">
+                            <div id="linkedin" class="social-btn flex-center">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.2812 0H11.7188C5.24666 0 0 5.24666 0 11.7188V38.2812C0 44.7533 5.24666 50 11.7188 50H38.2812C44.7533 50 50 44.7533 50 38.2812V11.7188C50 5.24666 44.7533 0 38.2812 0Z"
+                                        fill="white" />
+                                    <path
+                                        d="M38.2812 0H11.7188C5.24666 0 0 5.24666 0 11.7188V38.2812C0 44.7533 5.24666 50 11.7188 50H38.2812C44.7533 50 50 44.7533 50 38.2812V11.7188C50 5.24666 44.7533 0 38.2812 0Z"
+                                        fill="#0A66C2" />
+                                    <path
+                                        d="M36.0771 42.5166H41.7939C42.0011 42.5166 42.1998 42.4343 42.3463 42.2878C42.4928 42.1414 42.5751 41.9427 42.5752 41.7355L42.5781 29.657C42.5781 23.3439 41.2178 18.4914 33.8402 18.4914C31.0357 18.3871 28.391 19.8328 26.9639 22.2469C26.9569 22.2586 26.9463 22.2677 26.9336 22.2728C26.921 22.278 26.907 22.2788 26.8938 22.2752C26.8807 22.2717 26.869 22.2639 26.8607 22.2531C26.8523 22.2423 26.8478 22.2291 26.8477 22.2154V19.8555C26.8477 19.6483 26.7653 19.4496 26.6188 19.303C26.4723 19.1565 26.2736 19.0742 26.0664 19.0742H20.6412C20.434 19.0742 20.2353 19.1565 20.0888 19.303C19.9423 19.4496 19.86 19.6483 19.86 19.8555V41.7344C19.86 41.9416 19.9423 42.1403 20.0888 42.2868C20.2353 42.4333 20.434 42.5156 20.6412 42.5156H26.3576C26.5648 42.5156 26.7635 42.4333 26.91 42.2868C27.0566 42.1403 27.1389 41.9416 27.1389 41.7344V30.9193C27.1389 27.8613 27.7189 24.8998 31.5102 24.8998C35.2475 24.8998 35.2959 28.399 35.2959 31.1174V41.7354C35.2959 41.9426 35.3782 42.1413 35.5247 42.2878C35.6712 42.4343 35.8699 42.5166 36.0771 42.5166ZM7.42188 11.6461C7.42188 13.9633 9.32949 15.8699 11.6469 15.8699C13.9637 15.8697 15.8701 13.9619 15.8701 11.6451C15.8697 9.32832 13.9631 7.42188 11.6461 7.42188C9.32852 7.42188 7.42188 9.32891 7.42188 11.6461ZM8.78105 42.5166H14.5051C14.7123 42.5166 14.911 42.4343 15.0575 42.2878C15.204 42.1413 15.2863 41.9426 15.2863 41.7354V19.8555C15.2863 19.6483 15.204 19.4496 15.0575 19.303C14.911 19.1565 14.7123 19.0742 14.5051 19.0742H8.78105C8.57385 19.0742 8.37514 19.1565 8.22863 19.303C8.08211 19.4496 7.9998 19.6483 7.9998 19.8555V41.7354C7.9998 41.9426 8.08211 42.1413 8.22863 42.2878C8.37514 42.4343 8.57385 42.5166 8.78105 42.5166Z"
+                                        fill="white" />
+                                </svg>
+                                <span>in/eliezer-chaves</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/eliezer-chaves" target="_blank" rel="noopener noreferrer">
+                            <div id="github" class="social-btn flex-center">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.2812 0H11.7188C5.24666 0 0 5.24666 0 11.7188V38.2812C0 44.7533 5.24666 50 11.7188 50H38.2812C44.7533 50 50 44.7533 50 38.2812V11.7188C50 5.24666 44.7533 0 38.2812 0Z"
+                                        fill="#242938" />
+                                    <path
+                                        d="M25.0002 5.85938C14.2146 5.85938 5.46875 14.6035 5.46875 25.3908C5.46875 34.0203 11.065 41.3414 18.8256 43.924C19.8016 44.1049 20.16 43.5004 20.16 42.9846C20.16 42.5187 20.1418 40.9803 20.1334 39.3482C14.6998 40.5297 13.5533 37.0438 13.5533 37.0438C12.6646 34.7861 11.3846 34.1859 11.3846 34.1859C9.6125 32.9736 11.5182 32.9986 11.5182 32.9986C13.4795 33.1363 14.5123 35.0113 14.5123 35.0113C16.2543 37.9973 19.0814 37.134 20.1959 36.635C20.3713 35.3725 20.8773 34.5109 21.4359 34.0232C17.0979 33.5293 12.5375 31.8545 12.5375 24.3707C12.5375 22.2383 13.3004 20.4959 14.5498 19.1281C14.3469 18.6361 13.6783 16.6496 14.7389 13.9594C14.7389 13.9594 16.3791 13.4346 20.1115 15.9613C21.6695 15.5287 23.3402 15.3117 25.0002 15.3043C26.66 15.3117 28.3322 15.5287 29.893 15.9615C33.6209 13.4344 35.2588 13.9596 35.2588 13.9596C36.3219 16.6496 35.6531 18.6363 35.4502 19.1281C36.7025 20.4959 37.4604 22.2383 37.4604 24.3707C37.4604 31.8725 32.8912 33.5242 28.542 34.0076C29.2426 34.6139 29.8668 35.8023 29.8668 37.6246C29.8668 40.2379 29.8441 42.3412 29.8441 42.9846C29.8441 43.5043 30.1957 44.1133 31.1857 43.9215C38.942 41.3359 44.5312 34.0174 44.5312 25.3908C44.5312 14.6037 35.7865 5.85938 25.0002 5.85938ZM12.784 33.6822C12.741 33.7793 12.5883 33.8084 12.4492 33.7418C12.3074 33.6781 12.2279 33.5457 12.2738 33.4484C12.3158 33.3484 12.4689 33.3207 12.6102 33.3877C12.7521 33.4514 12.833 33.585 12.784 33.6822ZM13.7447 34.5395C13.6516 34.626 13.4693 34.5857 13.3459 34.4492C13.2182 34.3131 13.1941 34.1311 13.2887 34.0434C13.3846 33.957 13.5613 33.9975 13.6893 34.1336C13.817 34.2715 13.842 34.4521 13.7447 34.5395ZM14.4037 35.6363C14.284 35.7195 14.0883 35.6416 13.9674 35.4678C13.8477 35.2941 13.8477 35.0859 13.9699 35.0023C14.0912 34.9189 14.284 34.9939 14.4066 35.1664C14.526 35.343 14.526 35.5514 14.4037 35.6363ZM15.5184 36.9066C15.4113 37.0246 15.1834 36.993 15.0164 36.8318C14.8457 36.6744 14.798 36.451 14.9055 36.3328C15.0139 36.2145 15.2432 36.2479 15.4113 36.4076C15.5809 36.5646 15.6326 36.7898 15.5184 36.9066ZM16.959 37.3354C16.9117 37.4885 16.6922 37.558 16.4709 37.493C16.2502 37.426 16.1055 37.2469 16.1502 37.0922C16.1961 36.9383 16.4166 36.8658 16.6395 36.9354C16.8602 37.002 17.0049 37.1799 16.959 37.3354ZM18.5984 37.5174C18.6039 37.6783 18.4164 37.8119 18.1842 37.8148C17.9506 37.8201 17.7617 37.6896 17.7592 37.5313C17.7592 37.3686 17.9426 37.2363 18.176 37.2324C18.4084 37.2279 18.5984 37.3572 18.5984 37.5174ZM20.209 37.4557C20.2369 37.6127 20.0756 37.7742 19.8449 37.8172C19.6182 37.8586 19.4082 37.7615 19.3795 37.6057C19.3514 37.4445 19.5156 37.2832 19.742 37.2414C19.973 37.2014 20.1797 37.2959 20.209 37.4557Z"
+                                        fill="white" />
+                                </svg>
+
+                                <span>eliezer-chaves</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
 
-    <!-- Scripts do Bootstrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
